@@ -18,7 +18,7 @@ form.addEventListener("submit", event => {
     event.preventDefault();
     let stored = localStorage.getItem(FFS_KEY);
     if (stored != null) {
-        console.log(stored);
+        console.log(JSON.parse(stored));
     }
     form.reset();
     localStorage.clear();

@@ -17,6 +17,7 @@ function CreateItemFromTemplate(galleryItem) {
                     src=${ galleryItem.preview }
                     data-source=${ galleryItem.original }
                     alt=${ galleryItem.description }
+                    title=${ galleryItem.description }
                 />
                 </a>
             </li>
@@ -28,7 +29,7 @@ let galleryMarkup = galleryItems.map(CreateItemFromTemplate).join("");
 galleryContainer.insertAdjacentHTML("beforeend", galleryMarkup)
 
 const lightbox = new SimpleLightbox(`.gallery a`,
-    {
-
-    });
+{
+    captionDelay: 250
+});
 console.log(galleryItems);
