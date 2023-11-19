@@ -6,8 +6,9 @@ import"./assets/modulepreload-polyfill-3cfb730f.js";/* empty css                
                     src=${o.preview}
                     data-source=${o.original}
                     alt=${o.description}
+                    title=${o.description}
                 />
                 </a>
             </li>
-        `}let e=p.map(t).join("");a.insertAdjacentHTML("beforeend",e);new i(".gallery a",{});console.log(p);
+        `}let e=p.map(t).join("");a.insertAdjacentHTML("beforeend",e);new i(".gallery a",{captionDelay:250});console.log(p);
 //# sourceMappingURL=commonHelpers.js.map
